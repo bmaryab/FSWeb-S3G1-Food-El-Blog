@@ -9,6 +9,11 @@ h1 {
   font-size: 60px;
 }
 
+#banner {
+  max-width: 100%;
+  height: auto;
+}
+
 h2, h3, h4, h5, h6 {
   font-family: 'Gaegu', cursive;
   margin-bottom: 0;
@@ -30,16 +35,39 @@ img {
 
 .content-row {
   display: flex;
+  flex-direction: column;
 }
 
 .content-row div {
   margin: 20px;
-  /*======= margin propery yaratın.  Değerini 20px olarak atayın*/
+}
+
+.content-row #image1 {
+  margin-right: 20px;
+  max-width: 500px;
+  height: auto;
+  float: left;
+}
+
+.content-row #image2 {
+  margin-left: 20px;
+  max-width: 100%;
+  height: auto;
+  float: right;
+}
+
+.content-row #image3 {
+  margin-right: 20px;
+  max-width: 100%;
+  height: auto;
+  float: left;
 }
 
 .container {
   /*======= width property yaratın. Değerini 605px olarak atayın */
+  /*width: 605px;*/
   margin: 0 auto;
+  text-align: center;
 }
 
 .container header nav a {
@@ -51,17 +79,14 @@ img {
   color: white;
   text-decoration: none;
   margin-bottom: 20px;
-  background-color: #E79947;/*======= background property yaratın. Değerini #E79947 olarak atayınız.*/
-  
+  background-color: #E79947;
 }
 
 .container header nav a:hover {
   background-color: white;
   color: green;
-/*======= background property yaratın ve değeri white olsun.  Sonra, color property yaratın ve değerini yapın. */
 }
 
-/*======= Hakkmızda bölümü için aşağıdaki stilleri içeren bir selector yaratın:*/
 #about {
   margin-top: 20px;
 }
@@ -77,7 +102,7 @@ img {
   margin: 0 0 10px 0;
 }
 
-/*======= contact-section class'da address tag'i için aşağdıaki stilleri içeren bir selector yaratın:*/
+
 .contact-section address {
    line-height: 2;
 }
@@ -90,8 +115,7 @@ footer {
 
 footer .footer-content { 
   margin: 0 auto;
-  width: 650px;
-  /*======= width property yaratın. Değerini 605px olarak atayın */  
+  width: 605px;
 }
 
 footer .footer-content h3 {
@@ -103,7 +127,6 @@ footer nav {
   display: flex;
 }
 
-/*======= Footer'daki anchor tag için aşağıdaki stilleri içeren bir selector yaratın:*/
 footer nav a {
   margin: 10px;
   color: black;
@@ -114,7 +137,7 @@ footer nav a:first-child {
   margin-left: 0;
 }
 
-/*======= Footer nav'daki anchor tag için aşağıdaki stilleri içeren bir hover state yaratın:*/
+
 footer nav a:hover {
   color: white;
 }
@@ -123,5 +146,4 @@ footer nav a:hover {
 footer .footer-content .copyright {
   padding: 20px 0;
   text-align:center;
-   /*======= metni ortalayacak kodu yazın */
 }
